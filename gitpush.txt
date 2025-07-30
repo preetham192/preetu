@@ -1,0 +1,14 @@
+import pandas  as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+df=pd.read_csv("C:\\Users\\betp\\Desktop\\mt.csv")
+print(df)
+plt.hist(df['mpg'])
+plt.show()
+plt.scatter(df['wt'],df['mpg'])
+plt.show()
+plt.bar(df['carb'],df['qsec'])
+plt.show()
+plt.boxplot(df['mpg'])
+plt.show()
